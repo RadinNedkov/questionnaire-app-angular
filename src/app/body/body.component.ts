@@ -8,12 +8,15 @@ import { QUESTIONS } from 'src/constants';
   styleUrls: ['./body.component.css']
 })
 export class BodyComponent {
-  questionsList = QUESTIONS
   questionsAnswer = false
   modalResult = false
+  questionsList: any[] = []
 
-  constructor(
-    private router: Router  ) {}
+  constructor(private router: Router) {}
+
+  ngOnInit() {
+    this.questionsList = [...QUESTIONS]
+  }
 
   openModal(value: boolean) {
     this.modalResult = confirm('Are you sure about your answer?')

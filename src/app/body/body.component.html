@@ -3,7 +3,8 @@
         <h3 class="text-center py-2 fw-bold">Questions list:</h3>
         <div class="px-md-5">
             <ul class="py-1 list-group list-group-numbered">
-                <li *ngFor="let item of questionsList, let i=index" class="list-group-item list-group-item-light">{{ item.question }}
+                <li *ngFor="let item of questionsList, let i=index" class="list-group-item list-group-item-light">
+                    {{ item.question }}
                     <div>
                         Select answer:
                         <select [name]="'answers-' + i">

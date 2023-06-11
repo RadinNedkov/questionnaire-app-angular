@@ -5,6 +5,7 @@ import { BodyComponent } from './body/body.component';
 
 const routes: Routes = [
   { path: '', component: BodyComponent },
+  { path: 'questionnaire', component: BodyComponent },
   { path: 'result', component: ResultPageComponent },
 ];
 
