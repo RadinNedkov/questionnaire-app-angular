@@ -1,6 +1,6 @@
 export const QUESTIONS = [
   {
-    question: 'How high is mount Everest?',
+    question: 'How high is mount Everest in meters?',
     answers: [
       {
         value: '2849',
